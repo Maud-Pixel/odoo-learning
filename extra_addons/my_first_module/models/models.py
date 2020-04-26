@@ -1,7 +1,14 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields
 
+
+class Car(models.Model):
+    _name = "Car.car"
+
+    name = fields.Char(string="Nom")
+    horse_power = fields.Integer(string="Puissance")
+    doors_number = fields.Integer(string="Nombre de portes")
 
 # class my_first_module(models.Model):
 #     _name = 'my_first_module.my_first_module'

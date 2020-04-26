@@ -14,6 +14,7 @@
 #             'objects': http.request.env['my_first_module.my_first_module'].search([]),
 #         })
 
+
 #     @http.route('/my_first_module/my_first_module/objects/<model("my_first_module.my_first_module"):obj>/', auth='public')
 #     def object(self, obj, **kw):
 #         return http.request.render('my_first_module.object', {
