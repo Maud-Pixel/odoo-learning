@@ -10,6 +10,17 @@ class Car(models.Model):
     horse_power = fields.Integer(string="Puissance")
     doors_number = fields.Integer(string="Nombre de portes")
 
+    driver_id = fields.Many2One("res.partner", string="Conducteur")
+    parking_id = fields.Many2one("parking.parking", string="Parking")
+
+
+class Parking(models.Model):
+    _name = "parking.parking"
+
+    name = fields.Char(string="Parking")
+    car_ids = fields.One2many("car.car", "parking_id", string="Cars")
+
+
 # class my_first_module(models.Model):
 #     _name = 'my_first_module.my_first_module'
 #     _description = 'my_first_module.my_first_module'
