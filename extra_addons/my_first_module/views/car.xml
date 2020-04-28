@@ -11,6 +11,7 @@
                     <field name="doors_number"/>
                     <field name="driver_id"/>
                     <field name="feature_ids"/>
+                    <field name
                 </form>
             </field>
         </record>

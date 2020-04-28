@@ -13,6 +13,12 @@ class Car(models.Model):
     driver_id = fields.Many2One("res.partner", string="Conducteur")
     parking_id = fields.Many2one("parking.parking", string="Parking")
     feature_ids = fields.Many2many("car.feature", string="Option")
+    total_speed = fields.Integer(string="Speed total", compute="get_total_speed")
+
+    def get_total_speed(self):
+        print('Nom', self.name)
+        print("Puissance", self.horse_power)
+        self.total_speed = self.horse_power * 20
 
 class Parking(models.Model):
     _name = "parking.parking"
