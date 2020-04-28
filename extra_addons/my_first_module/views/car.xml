@@ -6,13 +6,17 @@
             <field  model="car.car">Car.car</field>
             <field name="arch" type="xml">
                 <form>
-                    <field name="name"/>
-                    <field name="horse_power"/>
-                    <field name="doors_number"/>
-                    <field name="driver_id"/>
-                    <field name="feature_ids"/>
-                    <field name="total_speed"/>
-                    <field name="say_hello"/>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="horse_power"/>
+                            <field name="doors_number"/>
+                            <field name="driver_id"/>
+                            <field name="feature_ids"/>
+                            <field name="total_speed"/>
+                            <field name="message"/>
+                        </group>
+                    </group>
                 </form>
             </field>
         </record>
