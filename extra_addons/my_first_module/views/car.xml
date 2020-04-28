@@ -3,7 +3,7 @@
     <data>
         <record id = "car_form" model="ir.ui.view">
             <field name="name">car.forms</field>
-            <field  model="car.car">Car.car</field>
+            <field  model="car.car">car.car</field>
             <field name="arch" type="xml">
                 <form>
                     <group>
@@ -23,7 +23,7 @@
 
         <record id = "car_tree" model="ir.ui.view">
             <field name="name">car.forms</field>
-            <field  model="car.car">Car.car</field>
+            <field  model="car.car">car.car</field>
             <field name="arch" type="xml">
                 <form>
                     <field name="name"/>
@@ -37,7 +37,7 @@
         <record id ="car_action" model="ir.action.act_window">
             <field name="name">car.forms</field>
             <field name="type">on.act_window</field>
-            <field name="res_model">Car.car</field>
+            <field name="res_model">car.car</field>
             <field name="view_mode">tree, form</field>
         </record>
 
