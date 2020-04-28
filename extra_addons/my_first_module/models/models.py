@@ -20,11 +20,12 @@ class Car(models.Model):
         print("Puissance", self.horse_power)
         self.total_speed = self.horse_power * 20
 
+
 class Parking(models.Model):
     _name = "parking.parking"
 
     name = fields.Char(string="Nom")
-    car_ids = fields.Many2one("car.car", "parking_id", string="Cars")
+   #n car_ids = fields.Many2one("car.car", "parking_id", string="Cars")
 
 
 class Carfeatures(models.Model):
