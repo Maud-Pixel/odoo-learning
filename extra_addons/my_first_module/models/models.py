@@ -12,13 +12,21 @@ class Car(models.Model):
 
     driver_id = fields.Many2One("res.partner", string="Conducteur")
     parking_id = fields.Many2one("parking.parking", string="Parking")
-
+    feature_ids = fields.Many2many("car.feature", string="Option")
 
 class Parking(models.Model):
     _name = "parking.parking"
 
     name = fields.Char(string="Parking")
     car_ids = fields.One2many("car.car", "parking_id", string="Cars")
+
+
+class Carfeatures(models.Model):
+    _name = "car.feature"
+
+    name = fields.Char(string="Nom")
+
+
 
 
 # class my_first_module(models.Model):

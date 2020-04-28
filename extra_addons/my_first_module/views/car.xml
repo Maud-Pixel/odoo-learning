@@ -10,6 +10,7 @@
                     <field name="horse_power"/>
                     <field name="doors_number"/>
                     <field name="driver_id"/>
+                    <field name="feature_ids"/>
                 </form>
             </field>
         </record>
