@@ -23,8 +23,8 @@ class Car(models.Model):
 class Parking(models.Model):
     _name = "parking.parking"
 
-    name = fields.Char(string="Parking")
-    car_ids = fields.One2many("car.car", "parking_id", string="Cars")
+    name = fields.Char(string="Nom")
+    car_ids = fields.Many2one("car.car", "parking_id", string="Cars")
 
 
 class Carfeatures(models.Model):
