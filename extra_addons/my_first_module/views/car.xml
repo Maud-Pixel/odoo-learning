@@ -11,7 +11,7 @@
                     <field name="doors_number"/>
                     <field name="driver_id"/>
                     <field name="feature_ids"/>
-                    <field name
+                    <field name="total_speed"
                 </form>
             </field>
         </record>
