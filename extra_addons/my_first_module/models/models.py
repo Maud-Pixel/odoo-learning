@@ -6,11 +6,12 @@ from odoo import models, fields
 class Car(models.Model):
     _name = "Car.car"
 
+
     name = fields.Char(string="Nom")
     horse_power = fields.Integer(string="Puissance")
     doors_number = fields.Integer(string="Nombre de portes")
 
-    driver_id = fields.Many2One("res.partner", string="Conducteur")
+    driver_id = fields.Many2one("res.partner", string="Conducteur")
     parking_id = fields.Many2one("parking.parking", string="Parking")
     feature_ids = fields.Many2many("car.feature", string="Option")
     total_speed = fields.Integer(string="Speed total", compute="get_total_speed")
