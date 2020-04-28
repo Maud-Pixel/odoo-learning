@@ -6,7 +6,6 @@ from odoo import models, fields
 class Car(models.Model):
     _name = "Car.car"
 
-
     name = fields.Char(string="Nom")
     horse_power = fields.Integer(string="Puissance")
     doors_number = fields.Integer(string="Nombre de portes")
