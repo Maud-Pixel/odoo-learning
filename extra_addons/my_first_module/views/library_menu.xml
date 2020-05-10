@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem id="menu_library" name="Library" sequence = "200"/>
+    <!-- Action to open the Book list-->
+    <act_window id = "action_library_book"
+                name="Library Books"
+                res_model="'libary.book"
+                view_mode="tree,form" />
+
+    <!--Menu item to open the Bool list -->
+    <menuitem id="menu_library_book"
+              name="Books"
+              parent="library_menu"
+              action="action_library_book" />
+
+</odoo>
